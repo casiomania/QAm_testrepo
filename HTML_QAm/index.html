@@ -1,4 +1,164 @@
-<!-- QA manual HW 21.1 -->
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Сторінка про Лінуса Торвальдса, творця Linux."
+    />
+    <title>Лінус Торвальдс</title>
+  </head>
+  <body>
+    <header>
+      <h1>Лінус Торвальдс</h1>
+      <p>Творець операційної системи Linux</p>
+      <img
+        src="photo/linus.jpg"
+        alt="Tux - пінгвін, талісман Linux"
+        width="200"
+        height="200"
+      />
+    </header>
 
-<html>
+    <nav>
+      <ul style="list-style-type: none">
+        <li>
+          <a href="https://uk.wikipedia.org/wiki/Лінус_Торвальдс#Біографія"
+            >Біографія</a
+          >
+        </li>
+        <li><a href="#linux">Linux</a></li>
+        <li><a href="#penguin">Талісман пінгвін</a></li>
+        <li><a href="#quote">Цитата</a></li>
+        <li><a href="#table">Таблиця</a></li>
+        <li><a href="/pages/contact.html">Контакти</a></li>
+        <li><a href="/pages/gallery.html">Галерея</a></li>
+      </ul>
+    </nav>
+
+    <section id="bio">
+      <h2>Біографія Лінуса Торвальдса</h2>
+      <p>
+        Лінус Торвальдс народився 28 грудня 1969 року в Гельсінкі, Фінляндія.
+        <br />
+        Він став відомим завдяки створенню ядра операційної системи Linux, яку
+        він почав розробляти в 1991 році.
+      </p>
+    </section>
+
+    <section id="linux">
+      <h2>Linux</h2>
+      <p>
+        Linux — це відкрита операційна система, яка була створена Лінусом
+        Торвальдсом. <br />Вона використовується в багатьох сферах — від
+        серверів до мобільних пристроїв, завдяки її гнучкості та стабільності.
+      </p>
+    </section>
+
+    <section id="penguin">
+      <h2>Талісман Linux — Пінгвін Tux</h2>
+      <p>
+        Офіційним талісманом Linux є пінгвін на ім'я Tux. <br />Його дизайн був
+        обраний самим Лінусом Торвальдсом як символ дружелюбності та веселого
+        духу спільноти Linux.
+      </p>
+      <img
+        src="photo/tux.png"
+        alt="Tux - пінгвін, талісман Linux"
+        width="200"
+        height="200"
+      />
+    </section>
+
+    <section id="quote">
+      <h2>Відомі цитати Лінуса Торвальдса</h2>
+      <blockquote cite="https://en.wikiquote.org/wiki/Linus_Torvalds">
+        "Всі хороші ідеї починаються з того, що хтось говорить: 'Це звучить як
+        божевілля, але давайте спробуємо!'"
+      </blockquote>
+    </section>
+
+    <section id="table">
+      <h2>Події</h2>
+      <table border="1" cellpadding="10">
+        <tr>
+          <th>Рік</th>
+          <th>Подія</th>
+        </tr>
+        <tr>
+          <td>1969</td>
+          <td>Народився Лінус Торвальдс</td>
+        </tr>
+        <tr>
+          <td>1991</td>
+          <td>Реліз першої версії Linux</td>
+        </tr>
+        <tr>
+          <td>1996</td>
+          <td>Створення талісману Linux — пінгвіна Tux</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="subscribe">
+      <h2>Підписатися на оновлення</h2>
+      <form action="#">
+        <label for="name">Ваше ім'я:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Введіть ваше ім'я"
+        /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+        /><br /><br />
+
+        <label for="birthdate">Дата народження:</label><br />
+        <input type="date" id="birthdate" name="birthdate" /><br /><br />
+
+        <label for="color">Виберіть ваш улюблений колір:</label><br />
+        <input type="color" id="color" name="color" /><br /><br />
+
+        <label for="range">Обрати рівень (1-100):</label><br />
+        <input
+          type="range"
+          id="range"
+          name="range"
+          min="1"
+          max="100"
+        /><br /><br />
+
+        <label for="bio-info">Ваша біографія:</label><br />
+        <textarea
+          id="bio"
+          name="bio"
+          rows="4"
+          cols="30"
+          placeholder="Розкажіть про себе"
+        ></textarea
+        ><br /><br />
+
+        <input
+          type="checkbox"
+          id="subscribe"
+          name="subscribe"
+          value="subscribe"
+        />
+        <label for="subscribe">Підписатися на новини</label><br /><br />
+
+        <input type="value" value="Підписатися" />
+      </form>
+    </section>
+
+    <footer>
+      <p>QA manual course, Hillel IT School 2024</p>
+    </footer>
+  </body>
 </html>
